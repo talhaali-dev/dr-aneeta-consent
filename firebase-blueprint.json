@@ -1,0 +1,22 @@
+{
+  "schema": {
+    "collections": [
+      {
+        "name": "consents",
+        "description": "Stores patient and caregiver consent records across JPMC research studies.",
+        "fields": [
+          { "name": "studyId", "type": "string", "description": "Identifier of the study (caregiver-burden or health-literacy)" },
+          { "name": "studyTitle", "type": "string", "description": "Title of the study" },
+          { "name": "participantCode", "type": "string", "description": "Unique code for the participant (e.g. P-001, HL-001)" },
+          { "name": "participantName", "type": "string", "description": "Name of the participant" },
+          { "name": "date", "type": "string", "description": "Date of consent" },
+          { "name": "signature", "type": "string", "description": "Base64 encoded signature image" },
+          { "name": "createdAt", "type": "timestamp", "description": "Creation timestamp" }
+        ],
+        "securityRules": {
+          "rules": "allow create: if true;\nallow read: if true;\nallow delete: if true;\nallow update: if false;"
+        }
+      }
+    ]
+  }
+}

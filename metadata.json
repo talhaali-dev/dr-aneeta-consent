@@ -1,0 +1,6 @@
+{
+  "name": "JPMC Oncology Research Consent Portal",
+  "description": "Informed consent documentation and management portal for JPMC Oncology Department clinical research studies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
