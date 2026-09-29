@@ -54,7 +54,8 @@ export const STUDIES: Record<string, StudyConfig> = {
     badge: 'Study 2',
     codePrefix: 'HL',
     pdfTemplate: '/JPMC-ICF-Health-Literacy.pdf',
-    formLink: 'https://forms.gle/mZozK9o5uBjL77X18',
+     formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScHdhSDwC_6UdegCdAdzUEEsR5bxtkfl9jESP9qdX_Go9qLxA/viewform',
+    formPrefillParam: 'entry.733877168',
     path: '/study/health-literacy',
     principalInvestigator: 'Dr. Anita Vallacha',
     investigators: [

@@ -59,8 +59,10 @@ export function HealthLiteracyConsentForm() {
       });
 
       // Redirect to Google Form for Study 2 in a new tab
-      const study2FormLink = "https://forms.gle/mZozK9o5uBjL77X18";
-      window.open(study2FormLink, '_blank', 'noopener,noreferrer');
+      // Redirect to Google Form for Study 2 with pre-filled Participant Code in a new tab
+      const study2FormBaseUrl = "https://docs.google.com/forms/d/e/1FAIpQLScHdhSDwC_6UdegCdAdzUEEsR5bxtkfl9jESP9qdX_Go9qLxA/viewform";
+      const prefillUrl = `${study2FormBaseUrl}?usp=pp_url&entry.733877168=${encodeURIComponent(autoParticipantCode)}`;
+      window.open(prefillUrl, '_blank', 'noopener,noreferrer');
       
       // Reset submission state and form so it doesn't get stuck
       setIsSubmitting(false);
